@@ -1,0 +1,7 @@
+crop\_wav\_files module
+=======================
+
+.. automodule:: crop_wav_files
+   :members:
+   :undoc-members:
+   :show-inheritance:
