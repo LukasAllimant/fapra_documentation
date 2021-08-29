@@ -180,30 +180,48 @@
             
   <div class="section" id="module-model_train_cv_nested">
 <span id="model-train-cv-nested-module"></span><h1>model_train_cv_nested module<a class="headerlink" href="#module-model_train_cv_nested" title="Permalink to this headline">¶</a></h1>
+<p>Nested cross validation module for evaluation and hyperparametertuning of standard machine learning classifiers</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="model_train_cv_nested.nested_cv_evaluation">
+<span class="sig-prename descclassname"><span class="pre">model_train_cv_nested.</span></span><span class="sig-name descname"><span class="pre">nested_cv_evaluation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param_space</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scaler</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">feature_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#model_train_cv_nested.nested_cv_evaluation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform nested cross validation with hyperparametertuning and model evaluation for a sklearn classifier, the hyperparametertuning is done by random search</p>
+<blockquote>
+<div><dl class="simple">
+<dt>model (sklearn classifier): </dt><dd><p>A sklearn classifier object that should be evaluated with nested cross validation</p>
+</dd>
+<dt>param_space (dict): </dt><dd><p>dictonary with hyperparameters and their possible distributions</p>
+</dd>
+<dt>scaler (sklearn preprocessing scaler): </dt><dd><p>scaler which is used to scale the datasets, for standard machine learning the <cite>StandardScaler</cite> is recommended</p>
+</dd>
+<dt>feature_name (str): </dt><dd><p>name of the feature set to use</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
 <dl class="py function">
 <dt class="sig sig-object py" id="model_train_cv_nested.train_AdaBoost">
 <span class="sig-prename descclassname"><span class="pre">model_train_cv_nested.</span></span><span class="sig-name descname"><span class="pre">train_AdaBoost</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#model_train_cv_nested.train_AdaBoost" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>function to define a AdaBoost Classifier with the param space, the feature names, and the scaler, and then calls the nested_cv_evaluation function</p>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="model_train_cv_nested.train_knn">
 <span class="sig-prename descclassname"><span class="pre">model_train_cv_nested.</span></span><span class="sig-name descname"><span class="pre">train_knn</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#model_train_cv_nested.train_knn" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="model_train_cv_nested.train_model">
-<span class="sig-prename descclassname"><span class="pre">model_train_cv_nested.</span></span><span class="sig-name descname"><span class="pre">train_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param_space</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scaler</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">feature_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#model_train_cv_nested.train_model" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>function to define a k-Nearest Neighbour Classifier with the param space, the feature names, and the scaler, and then calls the nested_cv_evaluation function</p>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="model_train_cv_nested.train_rf">
 <span class="sig-prename descclassname"><span class="pre">model_train_cv_nested.</span></span><span class="sig-name descname"><span class="pre">train_rf</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#model_train_cv_nested.train_rf" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>function to define a Random Forest Classifier with the param space, the feature names, and the scaler, and then calls the nested_cv_evaluation function</p>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="model_train_cv_nested.train_svm">
 <span class="sig-prename descclassname"><span class="pre">model_train_cv_nested.</span></span><span class="sig-name descname"><span class="pre">train_svm</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#model_train_cv_nested.train_svm" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>function to define a Support Vector Classifier with the param space, the feature names, and the scaler, and then calls the nested_cv_evaluation function</p>
+</dd></dl>
 
 </div>
 
