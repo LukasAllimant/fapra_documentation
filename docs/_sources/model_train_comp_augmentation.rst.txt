@@ -1,7 +1,0 @@
-model\_train\_comp\_augmentation module
-=======================================
-
-.. automodule:: model_train_comp_augmentation
-   :members:
-   :undoc-members:
-   :show-inheritance:

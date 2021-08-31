@@ -1,7 +1,0 @@
-deep\_learning\_comp\_augmentation module
-=========================================
-
-.. automodule:: deep_learning_comp_augmentation
-   :members:
-   :undoc-members:
-   :show-inheritance:

@@ -4,20 +4,11 @@ Scripts
 .. toctree::
    :maxdepth: 4
 
-   crop_wav_files
    data_augmentation
    deep_learning
-   deep_learning_comp_augmentation
-   deep_learning_keras_tuner
    feature_extraction
    file_management
    main
-   model_test
-   model_train_comp_augmentation
-   model_train_cv_nested
-   model_train_cv_single
-   model_train_old
    plots
-   test_file
-   test_pandas
+   standard_machine_learning
    var

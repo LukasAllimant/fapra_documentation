@@ -41,7 +41,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="deep_learning_comp_augmentation module" href="deep_learning_comp_augmentation.html" />
+    <link rel="next" title="feature_extraction module" href="feature_extraction.html" />
     <link rel="prev" title="data_augmentation module" href="data_augmentation.html" /> 
 </head>
 
@@ -90,22 +90,13 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">Scripts</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="crop_wav_files.html">crop_wav_files module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="data_augmentation.html">data_augmentation module</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">deep_learning module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="deep_learning_comp_augmentation.html">deep_learning_comp_augmentation module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="deep_learning_keras_tuner.html">deep_learning_keras_tuner module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="feature_extraction.html">feature_extraction module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="file_management.html">file_management module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="main.html">main module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="model_test.html">model_test module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="model_train_comp_augmentation.html">model_train_comp_augmentation module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="model_train_cv_nested.html">model_train_cv_nested module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="model_train_cv_single.html">model_train_cv_single module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="model_train_old.html">model_train_old module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plots.html">plots module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="test_file.html">test_file module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="test_pandas.html">test_pandas module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standard_machine_learning.html">standard_machine_learning module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="var.html">var module</a></li>
 </ul>
 </li>
@@ -180,9 +171,45 @@
             
   <div class="section" id="module-deep_learning">
 <span id="deep-learning-module"></span><h1>deep_learning module<a class="headerlink" href="#module-deep_learning" title="Permalink to this headline">¶</a></h1>
+<p>Module for for deep learning evaluation</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="deep_learning.create_dnn_model">
-<span class="sig-prename descclassname"><span class="pre">deep_learning.</span></span><span class="sig-name descname"><span class="pre">create_dnn_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">learn_rate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.01</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">momentum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">activation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'relu'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel_initializer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'uniform'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dropout_rate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight_constraint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">neurons_l1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">16</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">neurons_l2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">64</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">neurons_l3</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">32</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">12</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deep_learning.create_dnn_model" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">deep_learning.</span></span><span class="sig-name descname"><span class="pre">create_dnn_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">learn_rate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.001</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">activation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'relu'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel_initializer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'glorot_uniform'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dropout_rate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight_constraint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">neurons_l1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">24</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">neurons_l2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">48</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">neurons_l3</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">24</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">12</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deep_learning.create_dnn_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates keras tensorflow dnn model, different Hyperparameters can be passed as parameters, the structure of the dnn is a keras sequential model with 3 hidden dense layers an one dropout layer</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>learn_rate (float, optional): learning rate of the Adam optimizer. Defaults to 0.001.
+activation (str, optional): activation function used in all hidden layers. Defaults to ‘relu’.
+kernel_initializer (str, optional): kernel initializer used to initialize the wheigts. Defaults to ‘glorot_uniform’.
+dropout_rate (float, optional): dropout rate for the dropout layer. Defaults to 0.3.
+weight_constraint (int, optional): weight constraints. Defaults to 10.
+neurons_l1 (int, optional): number of neurons in the first hidden layer. Defaults to 24.
+neurons_l2 (int, optional): number of neurons in the second hidden layer. Defaults to 48.
+neurons_l3 (int, optional): number of neurons in the third hidden layer. Defaults to 24.
+input_size (int, optional): Size of the input feature vector. Defaults to 12.</p>
+</dd>
+<dt>Returns:</dt><dd><p>keras sequential model: keras sequential model with given hyperparameters</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="deep_learning.model_builder">
+<span class="sig-prename descclassname"><span class="pre">deep_learning.</span></span><span class="sig-name descname"><span class="pre">model_builder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deep_learning.model_builder" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="deep_learning.train_dnn_10_fold_cv_and_hyperparametertuning">
+<span class="sig-prename descclassname"><span class="pre">deep_learning.</span></span><span class="sig-name descname"><span class="pre">train_dnn_10_fold_cv_and_hyperparametertuning</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">settings</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deep_learning.train_dnn_10_fold_cv_and_hyperparametertuning" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="deep_learning.train_fixed_dnn">
+<span class="sig-prename descclassname"><span class="pre">deep_learning.</span></span><span class="sig-name descname"><span class="pre">train_fixed_dnn</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#deep_learning.train_fixed_dnn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="deep_learning.train_fixed_dnn_10_fold_cv">
+<span class="sig-prename descclassname"><span class="pre">deep_learning.</span></span><span class="sig-name descname"><span class="pre">train_fixed_dnn_10_fold_cv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">settings</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deep_learning.train_fixed_dnn_10_fold_cv" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </div>
@@ -193,7 +220,7 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="deep_learning_comp_augmentation.html" class="btn btn-neutral float-right" title="deep_learning_comp_augmentation module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="feature_extraction.html" class="btn btn-neutral float-right" title="feature_extraction module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
         <a href="data_augmentation.html" class="btn btn-neutral float-left" title="data_augmentation module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 

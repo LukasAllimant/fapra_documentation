@@ -1,7 +1,0 @@
-test\_pandas module
-===================
-
-.. automodule:: test_pandas
-   :members:
-   :undoc-members:
-   :show-inheritance:
