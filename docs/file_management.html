@@ -1,0 +1,406 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>file_management module &mdash; Classification of Cat Vocalizations  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="main module" href="main.html" />
+    <link rel="prev" title="feature_extraction module" href="feature_extraction.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Classification of Cat Vocalizations
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Scripts</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="data_augmentation.html">data_augmentation module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deep_learning.html">deep_learning module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="feature_extraction.html">feature_extraction module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">file_management module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="main.html">main module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plots.html">plots module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standard_machine_learning.html">standard_machine_learning module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="var.html">var module</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Classification of Cat Vocalizations</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">Scripts</a> &raquo;</li>
+        
+      <li>file_management module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/file_management.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-file_management">
+<span id="file-management-module"></span><h1>file_management module<a class="headerlink" href="#module-file_management" title="Permalink to this headline">¶</a></h1>
+<p>Module with different functions for the feature extraciton</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="file_management.add_result_to_dataframe">
+<span class="sig-prename descclassname"><span class="pre">file_management.</span></span><span class="sig-name descname"><span class="pre">add_result_to_dataframe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">classifier</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">settings</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">results</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Data/results/'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#file_management.add_result_to_dataframe" title="Permalink to this definition">¶</a></dt>
+<dd><p>loads dataframe and a row with a result to it.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>classifier (str): which classifier use
+settings (str): settings of the classifier
+results ([type]): [description]
+path (str, optional): filepath. Defaults to PATH_RESULTS.</p>
+</dd>
+<dt>Returns:</dt><dd><p>[type]: [description]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="file_management.add_row_to_dataframe">
+<span class="sig-prename descclassname"><span class="pre">file_management.</span></span><span class="sig-name descname"><span class="pre">add_row_to_dataframe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">times_augmented</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">augmentation_history</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">augmentation_set_number</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename_orig</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#file_management.add_row_to_dataframe" title="Permalink to this definition">¶</a></dt>
+<dd><p>adds a new row to a given dataframe</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>filename (String): entry for the colum “filename”
+path (String): dataframe entry for the colum “path”
+df (pandas dataframe): dataframe in which a row shall be added
+times_augmented (int): entry for the colum “times aumented”
+augmentation_history (String, optional): entry for the colum augmenatation_history. Defaults to None.
+augmentation_set_number (Int, optional): entry for augmentation set number. Defaults to None.
+filename_orig (Stirng, optional): entry for riginal filename. Defaults to None.</p>
+</dd>
+<dt>Returns:</dt><dd><p>pandas dataframe: returns pandas dataframe with added row</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="file_management.alt_add_result_to_dataframe">
+<span class="sig-prename descclassname"><span class="pre">file_management.</span></span><span class="sig-name descname"><span class="pre">alt_add_result_to_dataframe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y_pred</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_true</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">classifier</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">classifier_settings</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">features</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Data/results/'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#file_management.alt_add_result_to_dataframe" title="Permalink to this definition">¶</a></dt>
+<dd><p>loads dataframe and a row with a result to it. ATTENTION: deprecated</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>y_pred (int): predicted label
+y_true (int): true label
+classifier (str): which classifier use
+classifier_settings (str): settings of the classifier
+dataset (int): which dataset
+features (str): used featuers
+path (str, optional): filepath. Defaults to PATH_RESULTS.</p>
+</dd>
+<dt>Returns:</dt><dd><p>None: None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="file_management.create_folder">
+<span class="sig-prename descclassname"><span class="pre">file_management.</span></span><span class="sig-name descname"><span class="pre">create_folder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dirName</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#file_management.create_folder" title="Permalink to this definition">¶</a></dt>
+<dd><p>creates a new folder in the file system. Prints “created” or “already exist” as confirmation / decline</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>dirName (Stirng): name of the directory where to create the folder</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="file_management.crop_wav_files">
+<span class="sig-prename descclassname"><span class="pre">file_management.</span></span><span class="sig-name descname"><span class="pre">crop_wav_files</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_origin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Data/original_dataset/'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_goal</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Data/cropped_dataset/'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#file_management.crop_wav_files" title="Permalink to this definition">¶</a></dt>
+<dd><p>crops the Silence in first and last 4000 data points (=0.5s)</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>path_origin (string, optional): folder with original data. Defaults to path_original_dataset.
+path_goal (string, optional): folder with cropped data. Defaults to path_cropped_dataset.</p>
+</dd>
+<dt>Returns:</dt><dd><p>None: none</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="file_management.dataframe_lukas_create">
+<span class="sig-prename descclassname"><span class="pre">file_management.</span></span><span class="sig-name descname"><span class="pre">dataframe_lukas_create</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#file_management.dataframe_lukas_create" title="Permalink to this definition">¶</a></dt>
+<dd><p>create dataframe for use in older pandas version. inkompatible fields will be deleted from the dataframe.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>pandas dataframe: dataframe that is compatible with previous versions</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="file_management.delete_folder">
+<span class="sig-prename descclassname"><span class="pre">file_management.</span></span><span class="sig-name descname"><span class="pre">delete_folder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dirName</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#file_management.delete_folder" title="Permalink to this definition">¶</a></dt>
+<dd><p>deletes folder and prints confirmation</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>dirName (String): name of the directory</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="file_management.delete_settings_from_results">
+<span class="sig-prename descclassname"><span class="pre">file_management.</span></span><span class="sig-name descname"><span class="pre">delete_settings_from_results</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#file_management.delete_settings_from_results" title="Permalink to this definition">¶</a></dt>
+<dd><p>delets settings from dataframe.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>None: None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="file_management.get_augmented_train_test_data_from_df">
+<span class="sig-prename descclassname"><span class="pre">file_management.</span></span><span class="sig-name descname"><span class="pre">get_augmented_train_test_data_from_df</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">feature_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'mfcc_averaged'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">times_augmented</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">augmentation_set_number</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">increase_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filenames_original_train</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filenames_original_test</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scaler</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#file_management.get_augmented_train_test_data_from_df" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="file_management.get_original_data_from_df">
+<span class="sig-prename descclassname"><span class="pre">file_management.</span></span><span class="sig-name descname"><span class="pre">get_original_data_from_df</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">feature_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'mfcc_averaged'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#file_management.get_original_data_from_df" title="Permalink to this definition">¶</a></dt>
+<dd><p>getter function to read the original data from the dataframe</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>feature_name (str, optional): wicht features. Defaults to “mfcc_averaged”.</p>
+</dd>
+<dt>Returns:</dt><dd><p>numpy array: X and y</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="file_management.init_df">
+<span class="sig-prename descclassname"><span class="pre">file_management.</span></span><span class="sig-name descname"><span class="pre">init_df</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#file_management.init_df" title="Permalink to this definition">¶</a></dt>
+<dd><p>reads the initial dataframe structure and creates an empty pandas dataframe. The clums can be given by the init_dataframe excel file.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>None: None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="file_management.init_df_results">
+<span class="sig-prename descclassname"><span class="pre">file_management.</span></span><span class="sig-name descname"><span class="pre">init_df_results</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Data/'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#file_management.init_df_results" title="Permalink to this definition">¶</a></dt>
+<dd><p>initialize the pandas dataframe for the reslts</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>path (str, optional): file path to the data. Defaults to PATH_DATA.</p>
+</dd>
+<dt>Returns:</dt><dd><p>pandas dataframe: initialized dataframe</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="file_management.load_dataframe">
+<span class="sig-prename descclassname"><span class="pre">file_management.</span></span><span class="sig-name descname"><span class="pre">load_dataframe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Data/'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Dataframe_p4.pkl'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#file_management.load_dataframe" title="Permalink to this definition">¶</a></dt>
+<dd><p>loads dataframe into workspace</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>path (str, optional): ptath where the dataframe is stored. Defaults to PATH_DATA.
+filename (str, optional): filename of the dataframe. Defaults to “Dataframe_p4.pkl”.</p>
+</dd>
+<dt>Returns:</dt><dd><p>pandas datafrema: loaded dataframe</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="file_management.save_dataframe">
+<span class="sig-prename descclassname"><span class="pre">file_management.</span></span><span class="sig-name descname"><span class="pre">save_dataframe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Data/'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#file_management.save_dataframe" title="Permalink to this definition">¶</a></dt>
+<dd><p>save pandas dataframe as excel and pickle</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>df (pandas dataframe): dataframe to be stored
+path (String, optional): Filepath where the dataframe should be stored. Defaults to PATH_DATA.</p>
+</dd>
+<dt>Returns:</dt><dd><p>None: None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="file_management.save_pkl">
+<span class="sig-prename descclassname"><span class="pre">file_management.</span></span><span class="sig-name descname"><span class="pre">save_pkl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#file_management.save_pkl" title="Permalink to this definition">¶</a></dt>
+<dd><p>function to safe an arbitrary python object to a pickle file using pickle protocol 4</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>object (object): python data type to be stored
+name (String): filename in which the object shall be stored
+path (String): filepath where the object shal be stored</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="main.html" class="btn btn-neutral float-right" title="main module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="feature_extraction.html" class="btn btn-neutral float-left" title="feature_extraction module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Matthias Marquart and Lukas Allimant.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
