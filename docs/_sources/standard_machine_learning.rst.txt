@@ -1,7 +1,0 @@
-standard\_machine\_learning module
-==================================
-
-.. automodule:: standard_machine_learning
-   :members:
-   :undoc-members:
-   :show-inheritance:
